@@ -133,6 +133,7 @@
                     <p class="lead" style="text-align: left;">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum tenetur repellat iusto facilis obcaecati non eos alias quibusdam commodi culpa aspernatur, quos aut nemo itaque modi molestias vel autem tempora adipisci ex labore reprehenderit. Itaque, aliquid obcaecati, enim nostrum a aspernatur magni, totam commodi maiores ullam quos eius mollitia blanditiis!
                     </p>
+                    @livewire('open-form-btn')
                 </div>
                 <div class="col-xs-12 col-md-8">
                     <img src="http://placehold.jp/1080x720.png" width="100%" max-height="400px" class="banner" alt="cat">

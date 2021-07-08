@@ -70,7 +70,7 @@ class CountOfVaccine extends Component
             'count' => $this->count
         ]);
 
-        session()->flash('message', $this->hospitalId ? __('auth.updatedSuccess') : __('auth.createdSuccess'));
+        session()->flash('message', $this->recordId ? __('auth.updatedSuccess') : __('auth.createdSuccess'));
         $this->closeModal();
         $this->resetInputFields();
     }

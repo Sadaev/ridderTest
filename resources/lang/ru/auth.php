@@ -43,5 +43,20 @@ return [
     'enterCount' => 'Введите количество',
     'chooseValue' => 'Выберите значение',
     'count' => 'Количество',
-    'lastDate' => 'Дата последнего изменения'
+    'lastDate' => 'Дата последнего изменения',
+    'vaccine' => 'Вакцина',
+    'EnterVaccineName' => 'Введите название вакцины',
+    'registerForVaccination' => 'Записи на вакцинацию',
+    'dateOfRequest' => 'Дата запроса',
+    'fio' => 'ФИО',
+    'iin' => 'ИИН',
+    'phone' => 'Телефон',
+    'typeOfVaccine' => 'Тип вакцины',
+    'desiredDate' => 'Желаемая дата',
+    'requestStatus' => 'Статус заявки',
+    'fillIn' => 'Введите',
+    'open' => 'Открыто',
+    'close' => 'Закрыто',
+    'inProgress' => 'В обработке'
+
 ];
