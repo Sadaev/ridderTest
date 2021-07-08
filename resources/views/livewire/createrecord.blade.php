@@ -18,7 +18,7 @@
                                     <option value="{{$hospital->id}}">{{$hospital->name}}</option>
                                 @endforeach
                             </select>
-                            @error('name') <span class="text-red-500">{{ $message }}</span>@enderror
+                            @error('hospitalId') <span class="text-red-500">{{ $message }}</span>@enderror
                         </div>
                         <div class="mb-4">
                             <label for="vaccineName" class="block text-gray-700 text-sm font-bold mb-2">{{__('auth.vaccineName')}}</label>
@@ -29,13 +29,13 @@
                                     <option value="{{$vaccine->id}}">{{$vaccine->name}}</option>
                                 @endforeach
                             </select>
-                            @error('address') <span class="text-red-500">{{ $message }}</span>@enderror
+                            @error('vaccineId') <span class="text-red-500">{{ $message }}</span>@enderror
                         </div>
                         <div class="mb-4">
-                            <label for="count" class="block text-gray-700 text-sm font-bold mb-2">{{__('auth.vaccineName')}}</label>
+                            <label for="count" class="block text-gray-700 text-sm font-bold mb-2">{{__('auth.count')}}</label>
                             <input type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                     id="count" placeholder="{{__('auth.enterCount')}}" wire:model="count">
-                            @error('address') <span class="text-red-500">{{ $message }}</span>@enderror
+                            @error('count') <span class="text-red-500">{{ $message }}</span>@enderror
                         </div>
                     </div>
                     <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">

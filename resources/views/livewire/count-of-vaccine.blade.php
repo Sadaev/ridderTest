@@ -36,7 +36,7 @@
                     <th class="px-4 py-2">{{ __('auth.hospitalName') }}</th>
                     <th class="px-4 py-2">{{ __('auth.vaccineName') }}</th>
                     <th class="px-4 py-2">{{ __('auth.lastDate') }}</th>
-                    <th class="px-4 py-2">{{ __('auth.Count') }}</th>
+                    <th class="px-4 py-2">{{ __('auth.count') }}</th>
                     <th class="px-4 py-2">{{ __('auth.Action') }}</th>
                 </tr>
 
