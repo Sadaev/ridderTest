@@ -12,8 +12,11 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('auth.vaccinremains') }}
+                    <x-jet-nav-link href="{{ route('countofvaccine') }}" :active="request()->routeIs('countofvaccine')">
+                        {{ __('auth.countofvaccine') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('hospitals') }}" :active="request()->routeIs('hospitals')">
+                        {{ __('auth.hospitals') }}
                     </x-jet-nav-link>
                 </div>
             </div>

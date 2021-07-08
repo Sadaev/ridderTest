@@ -21,5 +21,22 @@ return [
     'login' => 'Вход',
     'Email' => 'Почта',
     'password' => 'Пароль',
-    'vaccinremains' => 'Остаток вакцин'
+    'vaccinremains' => 'Остаток вакцин',
+    'hospital' => 'Поликлиника',
+    'hospitals' => 'Поликлиники',
+    'hospitalAddress' => 'Адрес',
+    'Action' => 'Действия',
+    'EnterHospitalName' => 'Введите название организации',
+    'EnterHospitalAddress' => 'Введите адрес организации',
+    'Edit' => 'Изменить',
+    'Delete' => 'Удалить',
+    'createNewHospital' => 'Создать поликлинику',
+    'deletedSuccess' => 'Запись удалена успешно.',
+    'createdSuccess' => 'Запись создана успешно.',
+    'updatedSuccess' => 'Запись обнавлена успешно.',
+    'save' => 'Сохранить',
+    'cancel' => 'Отмена',
+    'hospitalName' => 'Название организации',
+    'countofvaccine' => 'Остаток вакцин',
+    'add' => 'Добавить'
 ];

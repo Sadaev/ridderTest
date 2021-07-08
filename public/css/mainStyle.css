@@ -4,7 +4,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /* Убираем внутренние отступы */
 ul[class],
 ol[class] {
