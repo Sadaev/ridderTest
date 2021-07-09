@@ -6,6 +6,7 @@ use App\Http\Livewire\Hospitals;
 use App\Http\Livewire\CountOfVaccine;
 use App\Http\Livewire\Vaccine;
 use App\Http\Livewire\RegistrationForVaccine;
+use App\Http\Livewire\LotteryParticipantTable;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,4 @@ Route::get('/hospitals', Hospitals::class)->name('hospitals');
 Route::get('/countofvaccine', CountOfVaccine::class)->name('countofvaccine');
 Route::get('/vaccine', Vaccine::class)->name('vaccine');
 Route::get('/register_for_vaccination', RegistrationForVaccine::class)->name('register_for_vaccination');
+Route::get('/lottery_participants', LotteryParticipantTable::class)->name('lottery_participants');

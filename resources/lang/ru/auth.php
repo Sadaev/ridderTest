@@ -58,6 +58,13 @@ return [
     'open' => 'Открыто',
     'close' => 'Закрыто',
     'inProgress' => 'В обработке',
-    'signUpForVaccination' => 'Записаться на вакцинацию'
+    'signUpForVaccination' => 'Записаться на вакцинацию',
+    'lotteryParticipants' => 'Участники конкурса',
+    'email' => 'Эл.почта',
+    'numberOfParticipant' => '№ участника',
+    'underConsideration' => 'На рассмотрении',
+    'rejected' => 'Отклонено',
+    'approved' => 'Одобрено',
+    'noDataAvailable' => 'Нет данных'
 
 ];

@@ -24,6 +24,9 @@
                     <x-jet-nav-link href="{{ route('register_for_vaccination') }}" :active="request()->routeIs('register_for_vaccination')">
                         {{ __('auth.registerForVaccination') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('lottery_participants') }}" :active="request()->routeIs('lottery_participants')">
+                        {{ __('auth.lotteryParticipants') }}
+                    </x-jet-nav-link>
                 </div>
             </div>
 
