@@ -136,17 +136,18 @@
                     <p class="lead" style="text-align: left;">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum tenetur repellat iusto facilis obcaecati non eos alias quibusdam commodi culpa aspernatur, quos aut nemo itaque modi molestias vel autem tempora adipisci ex labore reprehenderit. Itaque, aliquid obcaecati, enim nostrum a aspernatur magni, totam commodi maiores ullam quos eius mollitia blanditiis!
                     </p>
-
-
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerVaccination">
 
                         {{__('auth.signUpForVaccination')}}
 
                     </button>
+                    <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#alreadyVaccinated">
 
+                        {{__('auth.alreadyVaccinated')}}
+
+                    </button>
 
                     <!-- Modal -->
-
                     <div class="modal fade" id="registerVaccination" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
                         <div class="modal-dialog">
@@ -163,6 +164,29 @@
 
                                 <div class="modal-body">
                                     @livewire('open-form-btn')
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal fade" id="alreadyVaccinated" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                        <div class="modal-dialog">
+
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+
+                                    <h5 class="modal-title" id="exampleModalLabel"> {{__('auth.alreadyVaccinated')}}</h5>
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+
+                                <div class="modal-body">
+                                    @livewire('form-for-lottery')
                                 </div>
 
                             </div>
@@ -321,7 +345,14 @@
             $('#registerVaccination').modal('hide');
             $('#createSuccess').attr('hidden',true);
         }, 500)
-
+    })
+    window.addEventListener('closeModalLottery', event => {
+        $('#createSuccessLottery').removeAttr('hidden');
+        $('#approvedInformed').prop('checked', false)
+        setTimeout(() => {
+            $('#alreadyVaccinated').modal('hide');
+            $('#createSuccessLottery').attr('hidden',true);
+        }, 500)
     })
 </script>
 

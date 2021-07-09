@@ -65,6 +65,9 @@ return [
     'underConsideration' => 'На рассмотрении',
     'rejected' => 'Отклонено',
     'approved' => 'Одобрено',
-    'noDataAvailable' => 'Нет данных'
+    'noDataAvailable' => 'Нет данных',
+    'alreadyVaccinated' => 'Я уже вакцинирован(а)',
+    'informedAboutLotteryRule' => 'Я ознакомился с Условиями лотереи и согласен с ними',
+    'participateInTheCompetition' => 'Участвовать в конкурсе'
 
 ];

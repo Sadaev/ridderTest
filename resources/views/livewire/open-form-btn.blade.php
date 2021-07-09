@@ -54,5 +54,7 @@
     <div class="alert alert-success" hidden id="createSuccess" role="alert">
         {{__('auth.createdSuccess')}}
     </div>
-    <button type="button"  wire:click.prevent="store()" class="btn btn-primary close-modal">{{__('auth.save')}}</button>
+    <div class="dd-grid gap-2 d-md-flex justify-content-md-end">
+        <button type="button"  wire:click.prevent="store()" class="btn btn-primary close-modal">{{__('auth.save')}}</button>
+    </div>
 </div>
