@@ -57,6 +57,7 @@ return [
     'fillIn' => 'Введите',
     'open' => 'Открыто',
     'close' => 'Закрыто',
-    'inProgress' => 'В обработке'
+    'inProgress' => 'В обработке',
+    'signUpForVaccination' => 'Записаться на вакцинацию'
 
 ];

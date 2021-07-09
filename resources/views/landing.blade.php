@@ -7,6 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{asset('css/mainStyle.css')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+    <script src="{{asset('js/app.js')}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
     @livewireStyles
 </head>
 <body>
@@ -133,7 +136,42 @@
                     <p class="lead" style="text-align: left;">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum tenetur repellat iusto facilis obcaecati non eos alias quibusdam commodi culpa aspernatur, quos aut nemo itaque modi molestias vel autem tempora adipisci ex labore reprehenderit. Itaque, aliquid obcaecati, enim nostrum a aspernatur magni, totam commodi maiores ullam quos eius mollitia blanditiis!
                     </p>
-                    @livewire('open-form-btn')
+
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerVaccination">
+
+                        {{__('auth.signUpForVaccination')}}
+
+                    </button>
+
+
+                    <!-- Modal -->
+
+                    <div class="modal fade" id="registerVaccination" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                        <div class="modal-dialog">
+
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+
+                                    <h5 class="modal-title" id="exampleModalLabel"> {{__('auth.signUpForVaccination')}}</h5>
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+
+                                <div class="modal-body">
+                                    @livewire('open-form-btn')
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
                 </div>
                 <div class="col-xs-12 col-md-8">
                     <img src="http://placehold.jp/1080x720.png" width="100%" max-height="400px" class="banner" alt="cat">
@@ -275,6 +313,19 @@
     </footer>
 </main>
 @livewireScripts
+
+<script>
+    window.addEventListener('closeModal', event => {
+        $('#createSuccess').removeAttr('hidden');
+        setTimeout(() => {
+            $('#registerVaccination').modal('hide');
+            $('#createSuccess').attr('hidden',true);
+        }, 500)
+
+    })
+</script>
+
+
 </body>
-<script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+
 </html>
