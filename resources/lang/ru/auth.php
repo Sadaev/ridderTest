@@ -68,6 +68,7 @@ return [
     'noDataAvailable' => 'Нет данных',
     'alreadyVaccinated' => 'Я уже вакцинирован(а)',
     'informedAboutLotteryRule' => 'Я ознакомился с Условиями лотереи и согласен с ними',
-    'participateInTheCompetition' => 'Участвовать в конкурсе'
+    'participateInTheCompetition' => 'Участвовать в конкурсе',
+    'lotteryModelTitle' => 'Условия участия в лотерее'
 
 ];

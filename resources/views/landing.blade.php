@@ -194,7 +194,36 @@
                         </div>
 
                     </div>
+                    <div class="modal fade" id="lotteryInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
+                        <div class="modal-dialog modal-dialog-scrollable">
+
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+
+                                    <h5 class="modal-title" id="exampleModalLabel"> {{__('auth.lotteryModelTitle')}}</h5>
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+
+                                <div class="modal-body">
+                                    <text class="text-2xl">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        A iusto praesentium saepe velit. Aliquam dolore itaque
+                                        nisi placeat quam voluptatum?
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus accusantium adipisci, blanditiis dicta facere fuga ipsum iusto laudantium maiores mollitia officia provident, tempore? Assumenda atque consequatur, consequuntur esse et eum magnam necessitatibus nobis odio odit perferendis quas, quidem reprehenderit. Alias eos officia quae reiciendis sint. Nesciunt qui quis sequi!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda autem, consectetur deleniti dolorem doloremque eligendi eos facilis, impedit necessitatibus quo saepe ullam! Accusantium asperiores consequatur corporis distinctio dolor, doloribus ea eaque eum ex excepturi expedita illo, inventore ipsa iure laudantium minima molestiae necessitatibus non nulla odit omnis perferendis, quae voluptas.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum exercitationem maxime odit quis. Ad asperiores, dolor et facilis fugiat nam nesciunt nisi obcaecati quas, quasi quisquam sequi ullam? Illo ipsa maxime molestias nihil sit totam vel vero. Ad atque aut beatae consectetur error facilis fugiat illo nostrum odit pariatur, reiciendis rerum tempora unde? Adipisci ipsa nisi unde. At repudiandae tempora velit. Blanditiis doloribus eveniet facere id ipsam minima neque omnis quidem vitae voluptatem! At deleniti ea enim facere, harum id ipsum molestiae nulla odio perspiciatis quaerat quas quo sint sit, tempora ut velit veritatis voluptates? Enim mollitia nisi ratione voluptatibus!
+                                    </text>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
                 <div class="col-xs-12 col-md-8">

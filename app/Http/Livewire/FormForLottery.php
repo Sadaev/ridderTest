@@ -26,6 +26,11 @@ class FormForLottery extends Component
         $this->hospitalId = null;
         $this->status = null;
         $this->email = null;
+        $this->saveDisabled = 0;
+    }
+
+    public function changeButtonState(){
+        $this->saveDisabled = !$this->saveDisabled;
     }
 
     public function getData($records){

@@ -40,12 +40,11 @@
         @error('email') <span class="alert-sm alert-danger">{{ $message }}</span>@enderror
     </div>
     <div class="form-check mb-3">
-        <input class="form-check-input" wire:change="" type="checkbox" id="approvedInformed" aria-label="..." >
-        <label class="form-check-label" for="defaultCheck1">
-            {{__('auth.informedAboutLotteryRule')}}
+        <input class="form-check-input" wire:click="changeButtonState()" type="checkbox" aria-label="..." >
+        <label class="form-check-label cursor-pointer" for="defaultCheck1">
+            <a class="link-info" data-bs-toggle="modal" data-bs-target="#lotteryInfo">{{__('auth.informedAboutLotteryRule')}}</a>
         </label>
     </div>
-    @error('approvedInformed') <span class="alert-sm alert-danger">{{ $message }}</span>@enderror
 
     <div class="alert alert-success" hidden id="createSuccessLottery" role="alert">
         {{__('auth.createdSuccess')}}
