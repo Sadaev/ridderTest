@@ -69,6 +69,7 @@ return [
     'alreadyVaccinated' => 'Я уже вакцинирован(а)',
     'informedAboutLotteryRule' => 'Я ознакомился с Условиями лотереи и согласен с ними',
     'participateInTheCompetition' => 'Участвовать в конкурсе',
-    'lotteryModelTitle' => 'Условия участия в лотерее'
-
+    'lotteryModelTitle' => 'Условия участия в лотерее',
+    'statistics' => 'Статистика',
+    'countOfVaccinated' => 'Количесто вакцинированных'
 ];

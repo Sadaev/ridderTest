@@ -27,6 +27,9 @@
                     <x-jet-nav-link href="{{ route('lottery_participants') }}" :active="request()->routeIs('lottery_participants')">
                         {{ __('auth.lotteryParticipants') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('statistics') }}" :active="request()->routeIs('statistics')">
+                        {{ __('auth.statistics') }}
+                    </x-jet-nav-link>
                 </div>
             </div>
 

@@ -86,7 +86,7 @@ class RegistrationForVaccine extends Component
             'hospitalId' => $this->hospitalId,
             'dateOfVaccination' => $this->dateOfVaccine,
             'iin' => $this->peopleIin,
-            'status' => $this->status ?? 'open'
+            'status' => empty($this->status) ? 'open' : $this->status
         ]);
 
         session()->flash('message', $this->peopleId ? __('auth.updatedSuccess') : __('auth.createdSuccess'));
