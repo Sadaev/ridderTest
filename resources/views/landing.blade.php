@@ -251,37 +251,7 @@
         </div>
     </section>
     <section class="section">
-        <div class="container">
-            <div class="titleContainer">
-                <p class="h4">Остаток вакцин в поликлиниках г. Риддер</p>
-            </div>
-            <div style="width: 70%;margin: 0 auto;">
-                <div class="row mt-3">
-                    <div class="col-sm-12 col-md-4">
-                        Учереждение №1"
-                    </div>
-                    <div class="col-sm-12 col-md-8">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam facilis cumque ea ab nostrum alias nobis quod esse vel, ratione harum voluptas minus possimus facere totam odit eum distinctio dolores voluptatum quos odio? Inventore alias laboriosam consequatur, ipsum minus totam ipsa voluptatem omnis eos, ullam commodi aut optio, expedita mollitia!
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-sm-12 col-md-4">
-                        Учереждение №2"
-                    </div>
-                    <div class="col-sm-12 col-md-8">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus nulla cumque hic. Quaerat assumenda doloremque ad cum ratione veniam, ea, tempore repellat facilis accusamus modi. Repudiandae harum molestiae veritatis nulla eum repellat quos iste incidunt, aliquam eligendi perspiciatis accusantium nesciunt reiciendis similique. Iure molestias sit nostrum ratione dolores sint exercitationem?
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-sm-12 col-md-4">
-                        Учереждение №3"
-                    </div>
-                    <div class="col-sm-12 col-md-8">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam debitis, asperiores distinctio ullam deleniti est sapiente cum, pariatur eligendi maxime voluptas porro error eum consequatur assumenda, repellendus placeat obcaecati magni amet enim? Vel deleniti numquam optio, animi, perferendis accusantium minus officia aperiam reprehenderit, maiores asperiores quaerat distinctio vero veniam!
-                    </div>
-                </div>
-            </div>
-        </div>
+       @livewire('front-reminder-vaccine')
     </section>
     <section class="section" id="issue">
         <div class="container">
