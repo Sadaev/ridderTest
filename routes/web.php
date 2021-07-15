@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Livewire\Hospitals;
+use App\Http\Livewire\GeneralStatistics;
 use App\Http\Livewire\CountOfVaccine;
 use App\Http\Livewire\Vaccine;
 use App\Http\Livewire\RegistrationForVaccine;
@@ -29,6 +30,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('/hospitals', Hospitals::class)->name('hospitals');
+Route::get('/general_statistic', GeneralStatistics::class)->name('general_statistic');
 Route::get('/countofvaccine', CountOfVaccine::class)->name('countofvaccine');
 Route::get('/vaccine', Vaccine::class)->name('vaccine');
 Route::get('/register_for_vaccination', RegistrationForVaccine::class)->name('register_for_vaccination');

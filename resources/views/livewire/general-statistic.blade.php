@@ -1,3 +1,4 @@
+
 <div class="py-12">
 
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -21,10 +22,10 @@
                 </div>
 
             @endif
-            <button wire:click="create()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3">{{__('auth.add')}}</button>
+                    <button wire:click="create()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3">{{__('auth.createNewStatisticParam')}}</button>
             @if($isOpen)
 
-                @include('livewire.create-vaccine')
+                @include('livewire.create_general_statistic')
 
             @endif
 
@@ -33,8 +34,8 @@
                 <thead>
 
                 <tr class="bg-gray-100">
-                    <th class="px-4 py-2">№</th>
-                    <th class="px-4 py-2">{{ __('auth.vaccineName') }}</th>
+                    <th class="px-4 py-2">{{ __('auth.generalStatisticTitle') }}</th>
+                    <th class="px-4 py-2">{{ __('auth.generalStatisticCount') }}</th>
                     <th class="px-4 py-2">{{ __('auth.Action') }}</th>
                 </tr>
 
@@ -42,14 +43,14 @@
 
                 <tbody>
 
-                @foreach($vaccines as $vaccine)
+                @foreach($statistics as $stat)
 
                     <tr>
-                        <td class="border px-4 py-2">{{ $loop->index + 1 }}</td>
-                        <td class="border px-4 py-2">{{ $vaccine->name }}</td>
+                        <td class="border px-4 py-2">{{ $stat->title }}</td>
+                        <td class="border px-4 py-2">{{ $stat->count }}</td>
                         <td class="border px-4 py-2">
-                            <button wire:click="edit({{ $vaccine->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">{{ __('auth.Edit') }}</button>
-                            <button wire:click="delete({{ $vaccine->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">{{ __('auth.Delete') }}</button>
+                            <button wire:click="edit({{ $stat->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">{{ __('auth.Edit') }}</button>
+                            <button wire:click="delete({{ $stat->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">{{ __('auth.Delete') }}</button>
                         </td>
                     </tr>
 
@@ -63,4 +64,3 @@
 
     </div>
 </div>
-
