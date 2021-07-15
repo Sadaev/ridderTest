@@ -100,15 +100,60 @@
                 c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
                 C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
                 C480.224,136.96,497.728,118.496,512,97.248z"/>
-        </symbol>
+	</symbol>
+
+
+<symbol id="facebook" x="0px" y="0px"
+	 viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
+<circle style="fill:#4E598F;" cx="256.001" cy="256" r="256"/>
+<path style="fill:#364270;" d="M511.596,241.7L391.019,121.085c-1.998,0.605-6.982-1.714-9.173-1.274
+	c-51.717,8.62-101.71,0-151.704,13.791c-24.135,6.896-25.859,36.202-34.478,55.165c-12.067,34.478-10.343,72.404-25.859,105.158
+	c-10.343,22.411-34.478,36.202-43.098,62.061c-2.875,10.785-2.705,24.379-5.956,34.69l120.98,120.922
+	c4.725,0.26,9.48,0.403,14.269,0.403c141.384,0,256-114.616,256-256C512.001,251.201,511.858,246.434,511.596,241.7z"/>
+<g>
+	<path style="fill:#FFFFFF;" d="M363.043,109.466H148.958c-21.809,0-39.49,17.68-39.49,39.49v214.085
+		c0,21.811,17.68,39.49,39.49,39.49h105.584l0.183-104.722h-27.21c-3.536,0-6.406-2.86-6.418-6.396l-0.133-33.759
+		c-0.014-3.553,2.867-6.444,6.42-6.444h27.162v-32.618c0-37.852,23.118-58.463,56.884-58.463h27.71c3.543,0,6.42,2.874,6.42,6.42
+		v28.463c0,3.546-2.874,6.42-6.416,6.42l-17.006,0.01c-18.363,0-21.921,8.725-21.921,21.533v28.239h40.351
+		c3.848,0,6.83,3.358,6.375,7.173l-4.001,33.759c-0.381,3.232-3.122,5.665-6.375,5.665h-36.168l-0.183,104.726h62.826
+		c21.809,0,39.49-17.682,39.49-39.491v-214.09C402.533,127.147,384.852,109.466,363.043,109.466L363.043,109.466z"/>
+	<polygon style="fill:#FFFFFF;" points="254.542,402.53 254.725,297.808 254.277,297.808 254.277,402.53 	"/>
+</g>
+<path style="fill:#D1D1D1;" d="M363.043,109.466H254.277v141.741h0.269V218.59c0-37.852,23.118-58.463,56.884-58.463h27.71
+	c3.543,0,6.42,2.874,6.42,6.42v28.463c0,3.546-2.874,6.42-6.416,6.42l-17.006,0.01c-18.363,0-21.921,8.725-21.921,21.533v28.238
+	h40.351c3.848,0,6.83,3.358,6.375,7.173l-4.001,33.759c-0.381,3.232-3.122,5.665-6.375,5.665h-36.168l-0.183,104.726h62.826
+	c21.809,0,39.49-17.682,39.49-39.491V148.956C402.533,127.147,384.852,109.466,363.043,109.466z"/>
+</symbol>
+
+<symbol id="ok" x="0px" y="0px"
+	 viewBox="0 0 97.75 97.75" style="enable-background:new 0 0 97.75 97.75;" xml:space="preserve"
+	>
+<g>
+	<g>
+		<path d="M48.921,40.507c4.667-0.017,8.384-3.766,8.367-8.443c-0.017-4.679-3.742-8.402-8.411-8.406
+			c-4.708-0.005-8.468,3.787-8.432,8.508C40.48,36.826,44.239,40.524,48.921,40.507z"/>
+		<path d="M48.875,0C21.882,0,0,21.883,0,48.875S21.882,97.75,48.875,97.75S97.75,75.867,97.75,48.875S75.868,0,48.875,0z
+			 M48.945,14.863c9.52,0.026,17.161,7.813,17.112,17.438c-0.048,9.403-7.814,17.024-17.318,16.992
+			c-9.407-0.032-17.122-7.831-17.066-17.253C31.726,22.515,39.445,14.837,48.945,14.863z M68.227,56.057
+			c-2.105,2.161-4.639,3.725-7.453,4.816c-2.66,1.031-5.575,1.55-8.461,1.896c0.437,0.474,0.642,0.707,0.914,0.979
+			c3.916,3.937,7.851,7.854,11.754,11.802c1.33,1.346,1.607,3.014,0.875,4.577c-0.799,1.71-2.592,2.834-4.351,2.713
+			c-1.114-0.077-1.983-0.63-2.754-1.407c-2.956-2.974-5.968-5.895-8.862-8.925c-0.845-0.882-1.249-0.714-1.994,0.052
+			c-2.973,3.062-5.995,6.075-9.034,9.072c-1.365,1.346-2.989,1.59-4.573,0.82c-1.683-0.814-2.753-2.533-2.671-4.262
+			c0.058-1.166,0.632-2.06,1.434-2.858c3.877-3.869,7.742-7.75,11.608-11.628c0.257-0.257,0.495-0.53,0.868-0.93
+			c-5.273-0.551-10.028-1.849-14.099-5.032c-0.506-0.396-1.027-0.778-1.487-1.222c-1.783-1.711-1.962-3.672-0.553-5.69
+			c1.207-1.728,3.231-2.19,5.336-1.197c0.408,0.191,0.796,0.433,1.168,0.689c7.586,5.213,18.008,5.356,25.624,0.233
+			c0.754-0.576,1.561-1.05,2.496-1.289c1.816-0.468,3.512,0.201,4.486,1.791C69.613,52.874,69.6,54.646,68.227,56.057z"/>
+	</g>
+</symbol>
+
 </svg>
 <main class="container">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <svg class="bi me-2" width="40" height="40"><use xlink:href="#LOGO"/></svg>
-                    <span class="fs-4">VACCINATION</span>
+                <a class="navbar-text col-9 col-sm-8 col-md-6 col-lg-4 col-xl-3" href="#">
+		    <img width="48" height="48" src="/images/logo.jpeg" style="float:left" >
+                    <span class="d-block col-8 col-sm-9 col-md-9 col-xl-9" style="float:right">Все о вакцинации против COVID-19 в Риддере</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -129,23 +174,33 @@
             </div>
         </nav>
     </header>
-    <section class="section">
-        <div class="container">
+    <section class="section bg-action">
+        <div class="container bg-akciya-image akciya-height">
             <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <p class="lead" style="text-align: left;">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum tenetur repellat iusto facilis obcaecati non eos alias quibusdam commodi culpa aspernatur, quos aut nemo itaque modi molestias vel autem tempora adipisci ex labore reprehenderit. Itaque, aliquid obcaecati, enim nostrum a aspernatur magni, totam commodi maiores ullam quos eius mollitia blanditiis!
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+		    <p class="lead" style="text-align: left;">
+			<h1 class="akciya-title">Вакцинируйся и выиграй автомобиль</h1>
+			<div class="akciya-text">
+				Если Вы еще не сделали прививку от <span class="covid-19">COVID-19</span>, сей час самое время!
+			</div>
+			<div class="block-viccine-info col-4 col-md-6">
+				<div><span class="statistic-info">94262</span> Вакцин поставлено</div>
+				<div><span class="statistic-info">4430</span> Остаток вакцин</div>
+				<div>Данные актуальные за <span class="statistic-date">13.07.2021</span></div>
+			</div>
                     </p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerVaccination">
+                    <div><button type="button" class="btn btn-primary mt-3 btn-lg" data-bs-toggle="modal" data-bs-target="#registerVaccination">
 
                         {{__('auth.signUpForVaccination')}}
 
-                    </button>
-                    <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#alreadyVaccinated">
+		    </button></div>
+			<div>
+	                    <button type="button" class="btn btn-danger mt-3 btn-lg" data-bs-toggle="modal" data-bs-target="#alreadyVaccinated">
 
                         {{__('auth.alreadyVaccinated')}}
 
-                    </button>
+		    	    </button>
+			</div>
 
                     <!-- Modal -->
                     <div class="modal fade" id="registerVaccination" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -209,13 +264,18 @@
 
 
                                 <div class="modal-body">
-                                    <text class="text-2xl">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        A iusto praesentium saepe velit. Aliquam dolore itaque
-                                        nisi placeat quam voluptatum?
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus accusantium adipisci, blanditiis dicta facere fuga ipsum iusto laudantium maiores mollitia officia provident, tempore? Assumenda atque consequatur, consequuntur esse et eum magnam necessitatibus nobis odio odit perferendis quas, quidem reprehenderit. Alias eos officia quae reiciendis sint. Nesciunt qui quis sequi!
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda autem, consectetur deleniti dolorem doloremque eligendi eos facilis, impedit necessitatibus quo saepe ullam! Accusantium asperiores consequatur corporis distinctio dolor, doloribus ea eaque eum ex excepturi expedita illo, inventore ipsa iure laudantium minima molestiae necessitatibus non nulla odit omnis perferendis, quae voluptas.
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum exercitationem maxime odit quis. Ad asperiores, dolor et facilis fugiat nam nesciunt nisi obcaecati quas, quasi quisquam sequi ullam? Illo ipsa maxime molestias nihil sit totam vel vero. Ad atque aut beatae consectetur error facilis fugiat illo nostrum odit pariatur, reiciendis rerum tempora unde? Adipisci ipsa nisi unde. At repudiandae tempora velit. Blanditiis doloribus eveniet facere id ipsam minima neque omnis quidem vitae voluptatem! At deleniti ea enim facere, harum id ipsum molestiae nulla odio perspiciatis quaerat quas quo sint sit, tempora ut velit veritatis voluptates? Enim mollitia nisi ratione voluptatibus!
+				    <text class="text-2xl">
+					<h1>Условия участия в конкурсе</h1>
+						<ol>
+<li>В розыгрыше автомобиля могут участвовать все жители города Риддер старше 18 лет, получившие вакцину в одной из поликлиник города (в том числе в выездных пунктах вакцинации).
+<li>Участник должен указать Ф.И.О., номера мобильного телефона и место получения вакцинации.
+<li>Абонентский номер должен быть зарегистрирован на участника акции в базе оператора мобильной связи.
+<li>Розыгрыш состоится после завершения всеобщей вакцинации с онлайн трансляцией в социальных сетях.
+<li>В акции запрещается участвовать работникам и членам семьи аппарата акима города Риддер.
+</ol>
+<p>
+Для обеспечения прозрачности будет создана независимая общественная комиссия, которая будет отслеживать все этапы конкурса.
+</p>
                                     </text>
                                 </div>
 
@@ -226,9 +286,9 @@
                     </div>
 
                 </div>
-                <div class="col-xs-12 col-md-8">
-                    <img src="http://placehold.jp/1080x720.png" width="100%" max-height="400px" class="banner" alt="cat">
-                </div>
+                <!--<div class="col-xs-12 col-md-8">
+                    <img src="/images/akciya.png" width="100%" max-height="400px" class="banner" alt="cat">
+                </div>-->
             </div>
         </div>
     </section>
@@ -240,11 +300,15 @@
 
             <div class="row">
                 <div class="col-xs-12 col-md-4">
-                    <img src="http://placehold.jp/1080x720.png" class="banner" alt="cat">
+                    <img src="/images/vaccine.jpg" class="banner" alt="cat">
                 </div>
                 <div class="col-xs-12 col-md-8">
-                    <p class="lead" style="text-align: left;">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate aliquid iusto dolore corporis, repudiandae excepturi mollitia dolores aliquam corrupti fuga pariatur ducimus, assumenda nihil dolor illum? Reprehenderit numquam aut dolore repellendus nesciunt similique nostrum illo corporis excepturi. Magni recusandae veritatis cupiditate, cumque itaque delectus aut impedit repellendus pariatur eius accusamus repellat deserunt labore odit. Nesciunt aut totam tenetur? Iure expedita quia voluptas obcaecati optio cupiditate perferendis placeat mollitia quidem dolore! Quod distinctio placeat perspiciatis dolor ut facilis, cum libero iure, itaque aliquid fugiat magni nihil. Quidem beatae voluptate aspernatur quam fugit dignissimos modi commodi error consectetur. Id eveniet obcaecati voluptas ad dolor, optio at impedit doloribus, nihil omnis amet distinctio. Mollitia ex similique vero inventore facilis dolore, reiciendis sint optio ipsam magnam quae earum rem cumque nulla delectus doloremque commodi praesentium aspernatur dolor assumenda dicta unde repellat nihil expedita? Voluptatem explicabo quam, perspiciatis inventore veniam temporibus at tenetur amet aperiam.
+		    <p style="text-align: left;">
+<b>Вакцинация</b> — введение вакцины или анатоксина с целью создания активного специфического иммунного ответа иммунной системы организма против возбудителя инфекции.<br>
+<strong>Вакцина против COVID‑19</strong> — вакцина, вызывающая формирование приобретённого иммунитета против коронавирусной инфекции COVID-19, вызываемой коронавирусом SARS-CoV-2. Из-за быстрого глобального распространения инфекции и высокой смертности разработка вакцины является критически важной задачей.
+Прививать от коронавируса в РК начали с 1 февраля 2021 года. Речь идет о российской вакцине «Спутник V», которую производит Карагандинский фармацевтический комплекс (из России поставляется субстанция, а в Казахстане производят готовую форму из этой субстанции). «Спутник V» - это первая в мире зарегистрированная вакцина для профилактики коронавирусной инфекции. Ее разработали в Национальном исследовательском центре (НИЦ) эпидемиологии и микробиологии имени Николая Федоровича Гамалеи Министерства здравоохранения Российской Федерации. 
+До пандемии COVID‑19 работа над разработкой вакцины против коронавирусных заболеваний, таких как тяжёлый острый респираторный синдром (SARS) и ближневосточный респираторный синдром (MERS), позволила сформировать знания о структуре и функции коронавирусов; эти знания позволили ускорить разработку различных вакцинных технологий в начале 2020 года.
+Массовая вакцинация началась  в марте 2021 года.
                     </p>
                 </div>
             </div>
@@ -262,50 +326,103 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Accordion Item #1
+                            Вопрос №1: Почему вакцину разработали так быстро?
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                    </div>
+			<div class="accordion-body">
+В период пандемии возникла острая необходимость в данной вакцине. Разработка вакцин от COVID-19 проходила в условиях крайней срочности на фоне массового заражения и гибели людей от коронавирусной инфекции во всем мире. Кроме того, фармацевтические компании вложили значительные ресурсы в быструю разработку вакцины из-за глобальности проблемы. Но скорость, с которой она была произведена, совсем не означает, что компании обошли стороной протоколы безопасности.
+Что касается конкретно вакцины «Спутник V», то в НИЦЭМ им. Гамалеи, где она была создана, опирались на предыдущие разработки. Еще до пандемии Центр открыл технологическую платформу для создания вакцин и препаратов против РНК-содержащих оболочечных вирусов, к которым относится и коронавирус SARS-CoV-2.
+			</div>
+		</div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Accordion Item #2
+                            Вопрос №2: Какие есть побочные эффекты?
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+			<div class="accordion-body">
+Неблагоприятные проявления, характерные для применения вакцины, бывают преимущественно легкой или средней степени выраженности, могут развиваться в первые-вторые сутки после вакцинации и разрешаются в течение 3-х последующих дней.
+Чаще других могут развиться кратковременные общие (непродолжительный гриппоподобный синдром, характеризующийся ознобом, повышением температуры тела, артралгией, миалгией, астенией, общим недомоганием, головной болью) и местные (болезненность в месте инъекции, гиперемия, отечность) реакции.
+			</div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Accordion Item #3
+                            Вопрос №3: Можно ли отказаться от вакцины?
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+			<div class="accordion-body">
+Вакцинация в Казахстане является добровольной. Согласно 77 статье Кодекса РК «О здоровье народа и системе здравоохранения», любая медицинская процедура, в том числе и вакцинация, проводится только с информированного согласия прививаемого. Административной или уголовной ответственности за отказ от вакцинации в Казахстане не предусмотрено, любые притеснения будут являться незаконными.
+			</div>
+                    </div>
+		</div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Вопрос №4: Почему прививку нужно обязательно получить в два этапа?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+Вакцину от коронавируса следует вводить в два этапа с интервалом в 21 день. Первая доза дает непродолжительный защитный эффект за счет выработки небольшого количества антител. Вторая доза усиливает и закрепляет действие первой, количество антител в организме человека вырастает.
+			</div>
                     </div>
                 </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            Вопрос №5: Что такое электронный паспорт вакцинации?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+Электронный паспорт вакцинации - это документ, который удостоверяет получение профилактических прививок. Он будет содержать данные о том, какие препараты получил человек, в каких дозах, в какие даты, а также были ли проявления после прививки.Как только человек получит прививку от коронавирусной инфекции, сведения об этом будут доступны в приложении eGov mobile.
+			</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            Вопрос №6: Кому следует воздержаться от вакцинации?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<ol>
+<li>- гиперчувствительность к какому-либо компоненту вакцины;
+<li>- тяжелые аллергические реакции в анамнезе (к ним относятся: отек Квинке, анафилактический шок);
+<li>- острые инфекционные и неинфекционные заболевания - вакцинация проводится через 2-4 недели после выздоровления. При нетяжелых ОРВИ, острых инфекционных заболеваниях ЖКТ прививку можно делать после нормализации температуры;
+<li>- беременность и период грудного вскармливания;
+<li>- химиотерапия у онкобольных;
+<li>- возраст до 18 лет.
+				</ol>
+			</div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-    <footer class="section">
+    <footer class="section bg-light">
         <div class="d-flex justify-content-around">
             <div class="footerBox">
                 <div class="boxTitle">
-                    <p>Телефоны:</p>
+                    <p>Телефоны поликлиник:</p>
                 </div>
                 <div class="boxContainer">
                     <div class="itemContact d-flex">
-                        <p>Раб:</p>
-                        <p class="contactText">8778452114544</p>
+                        <p class="contactText">7 район: 8(7233)67-57-00</p>
                     </div>
                     <div class="itemContact d-flex">
-                        <p>Соц:</p>
-                        <p class="contactText">8778452114544</p>
+                        <p class="contactText">4 район: 8(7233)63-09-09</p>
+                    </div>
+                    <div class="itemContact d-flex">
+                        <p class="contactText">КДЦ: 8(7233)64-20-67</p>
                     </div>
                 </div>
             </div>
@@ -315,18 +432,24 @@
                 </div>
                 <div class="boxContainer d-flex justify-content-between">
                     <div class="itemSocial">
-                        <div class="socialIcon">
-                            <svg class="bi me-2" width="32" height="32"><use xlink:href="#instagram"/></svg>
+			<div class="socialIcon">
+			    <a href="https://instagram.com/akimatridder" target="_blank">
+	                            <svg class="bi me-2" width="32" height="32"><use xlink:href="#instagram"/></svg>
+			    </a>
                         </div>
                     </div>
                     <div class="itemSocial">
                         <div class="socialIcon">
-                            <svg class="bi me-2" width="32" height="32"><use xlink:href="#vk"/></svg>
+			    <a href="https://www.facebook.com/profile.php?id=100009764318178" target="_blank">
+                            	<svg class="bi me-2" width="32" height="32"><use xlink:href="#facebook"/></svg>
+			    </a>
                         </div>
                     </div>
                     <div class="itemSocial">
                         <div class="socialIcon">
-                            <svg class="bi me-2" width="32" height="32"><use xlink:href="#twitter"/></svg>
+			    <a href="https://ok.ru/profile/588834059008" target="_blank">
+                            	<svg class="bi me-2" width="32" height="32"><use xlink:href="#ok"/></svg>
+			    </a>
                         </div>
                     </div>
                 </div>
