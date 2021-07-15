@@ -30,6 +30,9 @@
                     <x-jet-nav-link href="{{ route('statistics') }}" :active="request()->routeIs('statistics')">
                         {{ __('auth.statistics') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('general_statistic') }}" :active="request()->routeIs('general_statistic')">
+                        {{ __('auth.general_statistic') }}
+                    </x-jet-nav-link>
                 </div>
             </div>
 

@@ -71,5 +71,9 @@ return [
     'participateInTheCompetition' => 'Участвовать в конкурсе',
     'lotteryModelTitle' => 'Условия участия в лотерее',
     'statistics' => 'Статистика',
-    'countOfVaccinated' => 'Количесто вакцинированных'
+    'countOfVaccinated' => 'Количесто вакцинированных',
+    'generalStatisticTitle' => 'Заголовок параметра',
+    'generalStatisticCount' => 'Количество',
+    'createNewStatisticParam' => 'Добавить статистические данные',
+    'general_statistic' => 'Общая статистика',
 ];
