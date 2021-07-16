@@ -162,13 +162,13 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a href="#inform" class="nav-link active" aria-current="page">Информация о вакцине</a></li>
                         <li class="nav-item"><a href="#issue" class="nav-link">Вопрос-Ответ</a></li>
-                        @if (Route::has('login'))
+{{--                        @if (Route::has('login'))
                             @auth
                             <li class="nav-item"><a href="{{ url('/dashboard') }}" class="nav-link">Админка</a></li>
                             @else
                             <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">Вход</a></li>
                             @endauth
-                        @endif
+                        @endif --}}
                     </ul>
                 </div>
             </div>
