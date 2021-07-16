@@ -76,4 +76,6 @@ return [
     'generalStatisticCount' => 'Количество',
     'createNewStatisticParam' => 'Добавить статистические данные',
     'general_statistic' => 'Общая статистика',
+    'EnterGeneralStatisticTitle' => 'Введите название показателя',
+    'EnterGeneralStatisticCount' => 'Введите значение показателя',
 ];

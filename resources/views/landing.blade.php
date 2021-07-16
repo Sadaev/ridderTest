@@ -183,11 +183,7 @@
 			<div class="akciya-text">
 				Если Вы еще не сделали прививку от <span class="covid-19">COVID-19</span>, сейчас самое время!
 			</div>
-			<div class="block-viccine-info col-4 col-md-6">
-				<div><span class="statistic-info">94262</span> Вакцин поставлено</div>
-				<div><span class="statistic-info">4430</span> Остаток вакцин</div>
-				<div>Данные актуальные за <span class="statistic-date">13.07.2021</span></div>
-			</div>
+			@livewire('front-general-statistic')
                     </p>
                     <div><button type="button" class="btn btn-primary mt-3 btn-lg" data-bs-toggle="modal" data-bs-target="#registerVaccination">
 
@@ -414,15 +410,18 @@
                 <div class="boxTitle">
                     <p>Телефоны поликлиник:</p>
                 </div>
-                <div class="boxContainer">
+		<div class="boxContainer">
                     <div class="itemContact d-flex">
-                        <p class="contactText">7 район: 8(7233)67-57-00</p>
+                        <p class="contactText">Первая городская поликлиника г.Риддер, ул. Назарбаева, 35: 8 (72336) 4-46-58</p>
                     </div>
                     <div class="itemContact d-flex">
-                        <p class="contactText">4 район: 8(7233)63-09-09</p>
+                        <p class="contactText">Поликлиника 7 район г.Риддер, ул. Толстого, 28: 8(72336) 7-57-00</p>
                     </div>
                     <div class="itemContact d-flex">
-                        <p class="contactText">КДЦ: 8(7233)64-20-67</p>
+                        <p class="contactText">Поликлиника 4 район г.Риддер, ул. Буровая, 6: 8(72336) 3-09-09</p>
+                    </div>
+                    <div class="itemContact d-flex">
+                        <p class="contactText">Консультативно-диагностический центр г.Риддер, пр.Гагарина 10: 8(72336) 4-20-67</p>
                     </div>
                 </div>
             </div>
