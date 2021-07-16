@@ -4,17 +4,23 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\GeneralStatistic;
+use App\Models\RemainderOftheVaccine;
 
 class GeneralStatistics extends Component
 {
 	public $statistics;
 	public $statisticId;
+	public $countVaccine = 0;
 	public $title	= '';
 	public $count	= 0;
 	public $isOpen	= false;
 
     public function render()
     {
+	    $vaccine = RemainderOftheVaccine::all();
+	    foreach($vaccine as $row){
+	    	$this->countVaccine =+ $row->count;
+	    }
 	    $this->statistics = GeneralStatistic::all();
 	    return view('livewire.general-statistic');
     }
