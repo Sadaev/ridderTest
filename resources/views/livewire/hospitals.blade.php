@@ -60,8 +60,8 @@
                         <td class="border px-4 py-2">{{ $hospital->name }}</td>
                         <td class="border px-4 py-2">{{ $hospital->address }}</td>
                         <td class="border px-4 py-2">
-                            <button wire:click="edit({{ $hospital->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">{{ __('auth.Edit') }}</button>
-                            <button wire:click="delete({{ $hospital->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">{{ __('auth.Delete') }}</button>
+                            <button wire:click="edit({{ $hospital->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" alt="{{ __('auth.Edit') }}"><svg class="bi me-2" width="16" height="16"><use xlink:href="#edit"/></svg></button>
+                            <button wire:click="delete({{ $hospital->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" alt="{{ __('auth.Delete') }}"><svg class="bi me-2" width="16" height="16"><use xlink:href="#delete"/></svg></button>
                         </td>
                     </tr>
 

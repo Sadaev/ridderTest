@@ -14,7 +14,7 @@
             <tbody>
         @foreach($completeData as $data)
             <tr>
-                <td> {{$data->hospitalName}}</td>
+                <td>{{$data->hospitalName}}</td>
                 <td>{{$data->vaccineName}}</td>
                 <td>{{$data->count}}</td>
             </tr>
