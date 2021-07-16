@@ -181,7 +181,7 @@
 		    <p class="lead" style="text-align: left;">
 			<h1 class="akciya-title">Вакцинируйся и выиграй автомобиль</h1>
 			<div class="akciya-text">
-				Если Вы еще не сделали прививку от <span class="covid-19">COVID-19</span>, сей час самое время!
+				Если Вы еще не сделали прививку от <span class="covid-19">COVID-19</span>, сейчас самое время!
 			</div>
 			<div class="block-viccine-info col-4 col-md-6">
 				<div><span class="statistic-info">94262</span> Вакцин поставлено</div>

@@ -8,6 +8,7 @@ use App\Models\GeneralStatistic;
 class GeneralStatistics extends Component
 {
 	public $statistics;
+	public $statisticId;
 	public $title	= '';
 	public $count	= 0;
 	public $isOpen	= false;
@@ -42,7 +43,7 @@ class GeneralStatistics extends Component
 			'count' => 'required',
 		]);
 
-		GeneralStatistic::updateOrCreate(['id' => $this->id],[
+		GeneralStatistic::updateOrCreate(['id' => $this->statisticId],[
 			'title' => $this->title,
 			'count' => $this->count,
 		]);
@@ -55,6 +56,7 @@ class GeneralStatistics extends Component
 
 	public function edit($id){
 		$generalStatistic = GeneralStatistic::findOrFail($id);
+		$this->statisticId = $generalStatistic->id;
 		$this->title = $generalStatistic->title;
 		$this->count = $generalStatistic->count;
 
