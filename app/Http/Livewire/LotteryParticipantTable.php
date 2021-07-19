@@ -5,6 +5,18 @@ namespace App\Http\Livewire;
 use App\Models\Hospital;
 use Livewire\Component;
 use App\Models\LotteryParicipant;
+use Maatwebsite\Excel\Facades\Excel;
+use Maatwebsite\Excel\Concerns\FromCollection;
+
+class LotteryExport implements FromCollection{
+
+    /**
+    * @return \Illuminate\Support\Collection
+    */
+    public function collection(){
+    	return LotteryParicipant::all();
+    }
+};
 
 class LotteryParticipantTable extends Component
 {
@@ -107,5 +119,9 @@ class LotteryParticipantTable extends Component
         $id = intval($id);
         LotteryParicipant::find($id)->delete();
         session()->flash('message',__('auth.deletedSuccess'));
+    }
+
+    public function export(){
+    	return Excel::download(new LotteryExport, 'lottery_participants.xlsx');
     }
 }
