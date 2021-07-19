@@ -28,12 +28,13 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
-
-Route::get('/hospitals', Hospitals::class)->name('hospitals');
-Route::get('/general_statistic', GeneralStatistics::class)->name('general_statistic');
-Route::get('/countofvaccine', CountOfVaccine::class)->name('countofvaccine');
-Route::get('/vaccine', Vaccine::class)->name('vaccine');
-Route::get('/register_for_vaccination', RegistrationForVaccine::class)->name('register_for_vaccination');
-Route::get('/lottery_participants', LotteryParticipantTable::class)->name('lottery_participants');
-Route::get('/lottery_participants/export', LotteryParticipantTable::class)->name('export');
-Route::get('/statistics', Statistics::class)->name('statistics');
+Route::group(['middleware' => ['auth']], function() {
+	Route::get('/hospitals', Hospitals::class)->name('hospitals');
+	Route::get('/general_statistic', GeneralStatistics::class)->name('general_statistic');
+	Route::get('/countofvaccine', CountOfVaccine::class)->name('countofvaccine');
+	Route::get('/vaccine', Vaccine::class)->name('vaccine');
+	Route::get('/register_for_vaccination', RegistrationForVaccine::class)->name('register_for_vaccination');
+	Route::get('/lottery_participants', LotteryParticipantTable::class)->name('lottery_participants');
+	Route::get('/lottery_participants/export', LotteryParticipantTable::class)->name('export');
+	Route::get('/statistics', Statistics::class)->name('statistics');
+});
