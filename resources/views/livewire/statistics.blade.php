@@ -49,8 +49,8 @@
                         <td class="border px-4 py-2">{{ $hospitalName}}</td>
                         <td class="border px-4 py-2">{{ $count }}</td>
 {{--                        <td class="border px-4 py-2">--}}
-{{--                            <button wire:click="edit({{ $record->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">{{ __('auth.Edit') }}</button>--}}
-{{--                            <button wire:click="delete({{ $record->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">{{ __('auth.Delete') }}</button>--}}
+{{--                            <button wire:click="edit({{ $record->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded">{{ __('auth.Edit') }}</button>--}}
+{{--                            <button wire:click="delete({{ $record->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded">{{ __('auth.Delete') }}</button>--}}
 {{--                        </td>--}}
                     </tr>
 
