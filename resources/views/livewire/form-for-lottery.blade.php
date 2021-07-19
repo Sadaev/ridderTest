@@ -21,7 +21,7 @@
         @error('peopleTel') <span class="alert-sm alert-danger">{{ $message }}</span>@enderror
     </div>
     <div class="mb-3 row">
-        <label for="hospitalIdLottery" class="col-sm-3 col-form-label">{{__('auth.hospital')}}</label>
+        <label for="hospitalIdLottery" class="col-sm-3 col-form-label">{{__('auth.VaccinationSite')}}</label>
         <div class="col-sm-9">
             <select id="hospitalIdLottery" class="form-select" aria-label="Default select example" wire:model="hospitalId">
                 <option selected>{{__('auth.chooseValue')}}</option>

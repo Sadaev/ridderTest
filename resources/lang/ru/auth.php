@@ -78,4 +78,5 @@ return [
     'general_statistic' => 'Общая статистика',
     'EnterGeneralStatisticTitle' => 'Введите название показателя',
     'EnterGeneralStatisticCount' => 'Введите значение показателя',
+    'VaccinationSite' => 'Место вакцинации',
 ];

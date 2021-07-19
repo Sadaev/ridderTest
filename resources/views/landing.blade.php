@@ -179,7 +179,7 @@
             <div class="row">
 		<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
 		    <p class="lead" style="text-align: left;">
-			<h1 class="akciya-title">Вакцинируйся и выиграй автомобиль</h1>
+			<h1 class="akciya-title">Вакцинируйся и выиграй ценный приз!</h1>
 			<div class="akciya-text">
 				Если Вы еще не сделали прививку от <span class="covid-19">COVID-19</span>, сейчас самое время!
 			</div>
