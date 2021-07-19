@@ -60,8 +60,8 @@
                         <td class="border px-4 py-2">{{ $people->dateOfVaccination }}</td>
                         <td class="border px-4 py-2">{{ __('auth.'.$people->status) }}</td>
                         <td class="border px-4 py-2">
-                            <button wire:click="edit({{ $people->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" title="{{ __('auth.Edit') }}"><svg class="bi me-2" width="16" height="16"><use xlink:href="#edit"/></svg></button>
-                            <button wire:click="delete({{ $people->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" title="{{ __('auth.Delete') }}"><svg class="bi me-2" width="16" height="16"><use xlink:href="#delete"/></svg></button>
+                            <button wire:click="edit({{ $people->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded" title="{{ __('auth.Edit') }}"><svg class="bi me-2" width="16" height="16"><use xlink:href="#edit"/></svg></button>
+                            <button wire:click="delete({{ $people->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded" title="{{ __('auth.Delete') }}"><svg class="bi me-2" width="16" height="16"><use xlink:href="#delete"/></svg></button>
                         </td>
                     </tr>
 
