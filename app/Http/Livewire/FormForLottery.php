@@ -3,7 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Hospital;
-use App\Models\LotteryParicipant;
+use App\Models\LotteryParticipant;
 use Livewire\Component;
 
 class FormForLottery extends Component
@@ -13,7 +13,7 @@ class FormForLottery extends Component
 
     public function render()
     {
-        $this->peoples = $this->getData(LotteryParicipant::all());
+        $this->peoples = $this->getData(LotteryParticipant::all());
         $this->hospitals = Hospital::all();
         return view('livewire.form-for-lottery');
     }
@@ -52,7 +52,7 @@ class FormForLottery extends Component
             'email' => 'required|email',
         ];
         $this->validate($validateArray);
-        LotteryParicipant::updateOrCreate(['id' => $this->peopleId],[
+        LotteryParticipant::updateOrCreate(['id' => $this->peopleId],[
             'fio' => $this->peopleFio,
             'phone' => $this->peopleTel,
             'hospitalId' => $this->hospitalId,

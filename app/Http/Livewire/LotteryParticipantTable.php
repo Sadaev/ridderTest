@@ -4,7 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Models\Hospital;
 use Livewire\Component;
-use App\Models\LotteryParicipant;
+use App\Models\LotteryParticipant;
 use Maatwebsite\Excel\Facades\Excel;
 use Maatwebsite\Excel\Concerns\FromCollection;
 
@@ -14,7 +14,7 @@ class LotteryExport implements FromCollection{
     * @return \Illuminate\Support\Collection
     */
     public function collection(){
-    	return LotteryParicipant::all();
+    	return LotteryParticipant::all();
     }
 };
 
@@ -26,7 +26,7 @@ class LotteryParticipantTable extends Component
 
     public function render()
     {
-        $this->peoples = $this->getData(LotteryParicipant::all());
+        $this->peoples = $this->getData(LotteryParticipant::all());
         $this->hospitals = Hospital::all();
         return view('livewire.lottery-participant-table');
     }
@@ -85,7 +85,7 @@ class LotteryParticipantTable extends Component
 
         $this->validate($validateArray);
 
-        LotteryParicipant::updateOrCreate(['id' => $this->peopleId],[
+        LotteryParticipant::updateOrCreate(['id' => $this->peopleId],[
             'fio' => $this->peopleFio,
             'phone' => $this->peopleTel,
             'hospitalId' => $this->hospitalId,
@@ -102,7 +102,7 @@ class LotteryParticipantTable extends Component
     public function edit($id)
     {
         $this->isEdit=true;
-        $people = LotteryParicipant::findOrFail($id);
+        $people = LotteryParticipant::findOrFail($id);
         $this->peopleId = $id;
         $this->peopleFio = $people->fio;
         $this->peopleTel = $people->phone;
@@ -117,7 +117,7 @@ class LotteryParticipantTable extends Component
     public function delete($id)
     {
         $id = intval($id);
-        LotteryParicipant::find($id)->delete();
+        LotteryParticipant::find($id)->delete();
         session()->flash('message',__('auth.deletedSuccess'));
     }
 
