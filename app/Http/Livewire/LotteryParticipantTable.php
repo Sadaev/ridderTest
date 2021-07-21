@@ -14,7 +14,7 @@ class LotteryExport implements FromCollection{
     * @return \Illuminate\Support\Collection
     */
     public function collection(){
-    	return LotteryParticipant::all();
+	return LotteryParticipant::all();
     }
 };
 

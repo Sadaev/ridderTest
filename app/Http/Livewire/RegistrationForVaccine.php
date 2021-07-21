@@ -5,7 +5,7 @@ namespace App\Http\Livewire;
 use App\Models\Hospital;
 use App\Models\TypeOfVaccine;
 use Livewire\Component;
-use App\Models\RegistrationFroVaccination;
+use App\Models\RegistrationForVaccination;
 
 class RegistrationForVaccine extends Component
 {
@@ -15,7 +15,7 @@ class RegistrationForVaccine extends Component
 
     public function render()
     {
-        $this->peoples = $this->getData(RegistrationFroVaccination::all());
+        $this->peoples = $this->getData(RegistrationForVaccination::all());
         $this->hospitals = Hospital::all();
         $this->vaccineTypes = TypeOfVaccine::all();
         return view('livewire.registration-for-vaccine');
@@ -79,7 +79,7 @@ class RegistrationForVaccine extends Component
         $this->validate($validateArray);
 
 
-        RegistrationFroVaccination::updateOrCreate(['id' => $this->peopleId],[
+        RegistrationForVaccination::updateOrCreate(['id' => $this->peopleId],[
             'fio' => $this->peopleFio,
             'tel' => $this->peopleTel,
             'vaccinationTypeId' => $this->vaccineId,
@@ -97,7 +97,7 @@ class RegistrationForVaccine extends Component
     public function edit($id)
     {
         $this->isEdit=true;
-        $people = RegistrationFroVaccination::findOrFail($id);
+        $people = RegistrationForVaccination::findOrFail($id);
         $this->peopleId = $id;
         $this->peopleFio = $people->fio;
         $this->peopleTel = $people->tel;
@@ -113,7 +113,7 @@ class RegistrationForVaccine extends Component
     public function delete($id)
     {
         $id = intval($id);
-        RegistrationFroVaccination::find($id)->delete();
+        RegistrationForVaccination::find($id)->delete();
         session()->flash('message',__('auth.deletedSuccess'));
     }
 }

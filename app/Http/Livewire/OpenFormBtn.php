@@ -3,7 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Hospital;
-use App\Models\RegistrationFroVaccination;
+use App\Models\RegistrationForVaccination;
 use App\Models\TypeOfVaccine;
 use Livewire\Component;
 
@@ -13,7 +13,7 @@ class OpenFormBtn extends Component
 
     public function render()
     {
-        $this->peoples = $this->getData(RegistrationFroVaccination::all());
+        $this->peoples = $this->getData(RegistrationForVaccination::all());
         $this->hospitals = Hospital::all();
         $this->vaccineTypes = TypeOfVaccine::all();
         return view('livewire.open-form-btn');
@@ -54,14 +54,14 @@ class OpenFormBtn extends Component
         $this->validate($validateArray);
 
 
-        RegistrationFroVaccination::updateOrCreate(['id' => $this->peopleId],[
+        RegistrationForVaccination::updateOrCreate(['id' => $this->peopleId],[
             'fio' => $this->peopleFio,
             'tel' => $this->peopleTel,
             'vaccinationTypeId' => $this->vaccineId,
             'hospitalId' => $this->hospitalId,
             'dateOfVaccination' => $this->dateOfVaccine,
             'iin' => $this->peopleIin,
-            'status' => $this->status ?? 'open'
+            'status' => $this->status ?? 'opened'
         ]);
         $this->dispatchBrowserEvent('closeModal');
         $this->cleanVars();

@@ -4,7 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\Hospital;
-use App\Models\RegistrationFroVaccination;
+use App\Models\RegistrationForVaccination;
 
 class Statistics extends Component
 {
@@ -18,7 +18,7 @@ class Statistics extends Component
 
     private function getData(){
         $hospitals = Hospital::all();
-        $usersWhoVaccinated = RegistrationFroVaccination::where('status', 'close')->get();
+        $usersWhoVaccinated = RegistrationForVaccination::where('status', 'close')->get();
         $hospitalVaccinated = [];
         foreach($hospitals as $hospital){
             $name = $hospital->name;

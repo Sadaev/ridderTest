@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class RegistrationFroVaccination extends Model
+class RegistrationForVaccination extends Model
 {
     use HasFactory;
     protected $table = 'registration_for_vaccination';

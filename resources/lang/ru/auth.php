@@ -36,6 +36,7 @@ return [
     'updatedSuccess' => 'Запись обнавлена успешно.',
     'save' => 'Сохранить',
     'cancel' => 'Отмена',
+    'canceled' => 'Отменено',
     'hospitalName' => 'Название организации',
     'countofvaccine' => 'Остаток вакцин',
     'add' => 'Добавить',
@@ -56,6 +57,7 @@ return [
     'requestStatus' => 'Статус заявки',
     'fillIn' => 'Введите',
     'open' => 'Открыто',
+    'opened' => 'Открыт',
     'close' => 'Закрыто',
     'inProgress' => 'В обработке',
     'signUpForVaccination' => 'Записаться на вакцинацию',
@@ -80,4 +82,6 @@ return [
     'EnterGeneralStatisticCount' => 'Введите значение показателя',
     'VaccinationSite' => 'Место вакцинации',
     'export' => 'Выгрузить',
+    'successfully' => 'Успешно',
+
 ];

@@ -61,9 +61,9 @@
                             <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                     id="status" wire:model="status">
                                 <option value="">{{__('auth.chooseValue')}}</option>
-                                <option value="open">{{__('auth.open')}}</option>
-                                <option value="inProgress">{{__('auth.inProgress')}}</option>
-                                <option value="close">{{__('auth.close')}}</option>
+                                <option value="opened">{{__('auth.open')}}</option>
+                                <option value="successfully">{{__('auth.successfully')}}</option>
+                                <option value="canceled">{{__('auth.canceled')}}</option>
 
                             </select>
                             @error('status') <span class="text-red-500">{{ $message }}</span>@enderror
