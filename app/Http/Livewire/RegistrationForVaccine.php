@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Hospital;
+use App\Models\LotteryParticipant;
 use App\Models\TypeOfVaccine;
 use Livewire\Component;
 use App\Models\RegistrationForVaccination;
@@ -100,7 +101,17 @@ class RegistrationForVaccine extends Component
             'dateOfVaccination' => $this->dateOfVaccine,
             'iin' => $this->peopleIin,
             'status' => empty($this->status) ? 'opened' : $this->status
-        ]);
+	]);
+
+	if(!empty($this->status) && $this->status === 'successfully')
+		LotteryParticipant::create([
+			'fio' => $this->peopleFio,
+			'phone' => $this->peopleTel,
+			'hospitalId' => $this->hospitalId,
+			'iin' => $this->peopleIin,
+			'status' => 'approved',
+			'email' => '',
+		]);
 
         session()->flash('message', $this->peopleId ? __('auth.updatedSuccess') : __('auth.createdSuccess'));
         $this->closeModal();
