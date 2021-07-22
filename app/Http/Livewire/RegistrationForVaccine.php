@@ -26,7 +26,9 @@ class RegistrationForVaccine extends Component
 
     public function render()
     {
-        $this->peoples = $this->getData(RegistrationForVaccination::all());
+	    $collection = RegistrationForVaccination::all();
+	    $filtered = $collection->where('status','!=', 'successfully');
+	$this->peoples = $this->getData($filtered->all());
         $this->hospitals = Hospital::all();
         $this->vaccineTypes = TypeOfVaccine::all();
         return view('livewire.registration-for-vaccine');
@@ -97,7 +99,7 @@ class RegistrationForVaccine extends Component
             'hospitalId' => $this->hospitalId,
             'dateOfVaccination' => $this->dateOfVaccine,
             'iin' => $this->peopleIin,
-            'status' => empty($this->status) ? 'open' : $this->status
+            'status' => empty($this->status) ? 'opened' : $this->status
         ]);
 
         session()->flash('message', $this->peopleId ? __('auth.updatedSuccess') : __('auth.createdSuccess'));
