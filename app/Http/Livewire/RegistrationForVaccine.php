@@ -6,6 +6,17 @@ use App\Models\Hospital;
 use App\Models\TypeOfVaccine;
 use Livewire\Component;
 use App\Models\RegistrationForVaccination;
+use Maatwebsite\Excel\Facades\Excel;
+use Maatwebsite\Excel\Concerns\FromCollection;
+
+class RegistrationForVaccinationExport implements FromCollection{
+	/**
+	 * @return \Illuminate\Support\Collection
+	 */
+	public function collection(){
+		return RegistrationForVaccination::all();
+	}
+}
 
 class RegistrationForVaccine extends Component
 {
@@ -115,5 +126,9 @@ class RegistrationForVaccine extends Component
         $id = intval($id);
         RegistrationForVaccination::find($id)->delete();
         session()->flash('message',__('auth.deletedSuccess'));
+    }
+
+    public function export(){
+    	return Excel::download(new RegistrationForVaccinationExport, 'registration_for_vaccination.xlsx');
     }
 }

@@ -34,7 +34,8 @@ Route::group(['middleware' => ['auth']], function() {
 	Route::get('/countofvaccine', CountOfVaccine::class)->name('countofvaccine');
 	Route::get('/vaccine', Vaccine::class)->name('vaccine');
 	Route::get('/register_for_vaccination', RegistrationForVaccine::class)->name('register_for_vaccination');
+	Route::get('/register_for_vaccination/export', RegistrationForVaccine::class)->name('export');
 	Route::get('/lottery_participants', LotteryParticipantTable::class)->name('lottery_participants');
-	Route::get('/lottery_participants/export', LotteryParticipantTable::class)->name('export');
+	Route::get('/lottery_participants/export', LotteryParticipantTable::class)->name('export1');
 	Route::get('/statistics', Statistics::class)->name('statistics');
 });
