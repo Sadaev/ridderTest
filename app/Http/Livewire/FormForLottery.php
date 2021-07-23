@@ -10,6 +10,7 @@ class FormForLottery extends Component
 {
     public $peoples, $hospitals, $peopleId, $peopleFio, $peopleTel, $peopleIin, $hospitalId, $status, $email;
     public $saveDisabled = 0;
+    public $isOpen = false;
 
     public function render()
     {
@@ -60,9 +61,18 @@ class FormForLottery extends Component
             'status' => $this->status ?? 'underConsideration',
             'email' => $this->email
         ]);
-        $this->dispatchBrowserEvent('closeModalLottery');
+//        $this->dispatchBrowserEvent('closeModalLottery');
         $this->saveDisabled = 0;
-        $this->cleanVars();
+	//        $this->cleanVars();
+	session()->flash('message', __('auth.successRegistrationLottery'));
 
+    }
+
+    public function closeModal(){
+	$this->cleanVars();
+    	$this->isOpen = false;
+    }
+    public function openModal(){
+    	$this->isOpen = true;
     }
 }

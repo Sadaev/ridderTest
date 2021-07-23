@@ -49,8 +49,8 @@ class Vaccine extends Component
         ]);
 
         session()->flash('message', $this->vaccineId ? __('auth.updatedSuccess') : __('auth.createdSuccess'));
-        $this->closeModal();
-        $this->resetInputFields();
+	$this->closeModal();
+	$this->resetInputFields();
     }
 
     public function edit($id)

@@ -9,6 +9,7 @@ use Livewire\Component;
 
 class OpenFormBtn extends Component
 {
+	public $isOpen = false;
     public $peoples, $hospitals, $vaccineTypes, $peopleId, $peopleFio, $peopleTel, $peopleIin, $vaccineId, $hospitalId, $dateOfVaccine, $status;
 
     public function render()
@@ -63,8 +64,18 @@ class OpenFormBtn extends Component
             'iin' => $this->peopleIin,
             'status' => $this->status ?? 'opened'
         ]);
-        $this->dispatchBrowserEvent('closeModal');
-        $this->cleanVars();
+        //$this->dispatchBrowserEvent('closeModal');
+	//$this->cleanVars();
+	session()->flash('message', __('auth.successRegistrationForVaccination'));
+    }
+
+    public function closeModal(){
+	$this->cleanVars();
+    	$this->isOpen = false;
+    }
+
+    public function openModal(){
+    	$this->isOpen = true;
     }
 
 }
