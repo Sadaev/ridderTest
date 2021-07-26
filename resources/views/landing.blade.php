@@ -412,9 +412,6 @@
                 </div>
 		<div class="boxContainer">
                     <div class="itemContact d-flex">
-                        <p class="contactText">Первая городская поликлиника г.Риддер, ул. Назарбаева, 35: 8 (72336) 4-46-58</p>
-                    </div>
-                    <div class="itemContact d-flex">
                         <p class="contactText">Поликлиника 7 район г.Риддер, ул. Толстого, 28: 8(72336) 7-57-00</p>
                     </div>
                     <div class="itemContact d-flex">
