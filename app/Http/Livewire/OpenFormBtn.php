@@ -28,7 +28,8 @@ class OpenFormBtn extends Component
         $this->peopleTel = null;
         $this->vaccineId = null;
         $this->dateOfVaccine = null;
-        $this->hospitalId = null;
+	$this->hospitalId = null;
+	$this->saveDisabled = true;
     }
 
     public function getData($records){
@@ -53,10 +54,7 @@ class OpenFormBtn extends Component
             'dateOfVaccine' => 'required',
         ];
 
-	if($this->validate($validateArray)){
-		$saveDisabled = false;
-	};
-
+	$this->validate($validateArray);
 
         RegistrationForVaccination::updateOrCreate(['id' => $this->peopleId],[
             'fio' => $this->peopleFio,
@@ -69,18 +67,16 @@ class OpenFormBtn extends Component
         ]);
         //$this->dispatchBrowserEvent('closeModal');
 	$this->cleanVars();
-
 	session()->flash('message', __('auth.successRegistrationForVaccination'));
     }
 
     public function closeModal(){
+	session()->flash('message', '');
 	$this->cleanVars();
     	$this->isOpen = false;
     }
 
     public function openModal(){
-	session()->flash('message', '');
-	$saveDisabled = true;
     	$this->isOpen = true;
     }
 

@@ -48,7 +48,7 @@
         @error('email') <span class="alert-sm alert-danger">{{ $message }}</span>@enderror
     </div>
     <div class="form-check mb-3">
-        <input class="form-check-input" wire:click="changeButtonState()" type="checkbox" aria-label="..." >
+        <input class="form-check-input" {{$saveDisabled ? '' : 'checked'}} wire:click="changeButtonState()" type="checkbox" aria-label="..." >
         <label class="form-check-label cursor-pointer" for="defaultCheck1">
             <a class="link-info" data-bs-toggle="modal" data-bs-target="#lotteryInfo">{{__('auth.informedAboutLotteryRule')}}</a>
         </label>
@@ -58,7 +58,7 @@
         {{__('auth.createdSuccess')}}
     </div>
     <div class="dd-grid gap-2 d-md-flex justify-content-md-end">
-        <button type="button " id="saveBtn" {{$saveDisabled ? '' : 'disabled'}}  wire:click.prevent="store()" class="btn btn-primary">{{__('auth.participateInTheCompetition')}}</button>
+        <button type="button " id="saveBtn" {{$saveDisabled ? 'disabled' : ''}}  wire:click.prevent="store()" class="btn btn-primary">{{__('auth.participateInTheCompetition')}}</button>
     </div>
 </div>
 

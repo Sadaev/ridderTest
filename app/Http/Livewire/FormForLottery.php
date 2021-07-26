@@ -9,7 +9,7 @@ use Livewire\Component;
 class FormForLottery extends Component
 {
     public $peoples, $hospitals, $peopleId, $peopleFio, $peopleTel, $peopleIin, $hospitalId, $status, $email;
-    public $saveDisabled = 0;
+    public $saveDisabled = true;
     public $isOpen = false;
 
     public function render()
@@ -27,7 +27,7 @@ class FormForLottery extends Component
         $this->hospitalId = null;
         $this->status = null;
         $this->email = null;
-        $this->saveDisabled = 0;
+	$this->saveDisabled = true;
     }
 
     public function changeButtonState(){
@@ -62,18 +62,16 @@ class FormForLottery extends Component
             'email' => $this->email
         ]);
 //        $this->dispatchBrowserEvent('closeModalLottery');
-        $this->saveDisabled = 0;
 	$this->cleanVars();
 	session()->flash('message', __('auth.successRegistrationLottery'));
-
     }
 
     public function closeModal(){
+	session()->flash('message', '');
     	$this->isOpen = false;
     }
 
     public function openModal(){
-	session()->flash('message', '');
     	$this->isOpen = true;
     }
 }
