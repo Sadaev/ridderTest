@@ -10,6 +10,7 @@ use Livewire\Component;
 class OpenFormBtn extends Component
 {
 	public $isOpen = false;
+	public $saveDisabled = true;
     public $peoples, $hospitals, $vaccineTypes, $peopleId, $peopleFio, $peopleTel, $peopleIin, $vaccineId, $hospitalId, $dateOfVaccine, $status;
 
     public function render()
@@ -46,13 +47,15 @@ class OpenFormBtn extends Component
         $validateArray = [
             'peopleFio' => 'required',
             'peopleTel' => 'required',
-            'peopleIin' => 'required',
+            'peopleIin' => 'required|min:12|max:12',
             'vaccineId' => 'required',
             'hospitalId' => 'required',
             'dateOfVaccine' => 'required',
         ];
 
-        $this->validate($validateArray);
+	if($this->validate($validateArray)){
+		$saveDisabled = false;
+	};
 
 
         RegistrationForVaccination::updateOrCreate(['id' => $this->peopleId],[
@@ -65,7 +68,8 @@ class OpenFormBtn extends Component
             'status' => $this->status ?? 'opened'
         ]);
         //$this->dispatchBrowserEvent('closeModal');
-	//$this->cleanVars();
+	$this->cleanVars();
+
 	session()->flash('message', __('auth.successRegistrationForVaccination'));
     }
 
@@ -75,6 +79,8 @@ class OpenFormBtn extends Component
     }
 
     public function openModal(){
+	session()->flash('message', '');
+	$saveDisabled = true;
     	$this->isOpen = true;
     }
 

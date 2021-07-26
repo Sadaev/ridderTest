@@ -63,16 +63,17 @@ class FormForLottery extends Component
         ]);
 //        $this->dispatchBrowserEvent('closeModalLottery');
         $this->saveDisabled = 0;
-	//        $this->cleanVars();
+	$this->cleanVars();
 	session()->flash('message', __('auth.successRegistrationLottery'));
 
     }
 
     public function closeModal(){
-	$this->cleanVars();
     	$this->isOpen = false;
     }
+
     public function openModal(){
+	session()->flash('message', '');
     	$this->isOpen = true;
     }
 }
