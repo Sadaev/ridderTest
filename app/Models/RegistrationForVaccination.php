@@ -9,5 +9,5 @@ class RegistrationForVaccination extends Model
 {
     use HasFactory;
     protected $table = 'registration_for_vaccination';
-    protected $fillable = ['fio', 'tel', 'vaccinationTypeId', 'hospitalId', 'dateOfVaccination', 'iin', 'status'];
+    protected $fillable = ['fio', 'tel', 'vaccinationTypeId', 'hospitalId', 'dateOfVaccination', 'iin', 'status','email'];
 }

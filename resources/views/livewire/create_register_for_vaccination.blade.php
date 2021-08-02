@@ -22,6 +22,12 @@
                             @error('peopleIin') <span class="text-red-500">{{ $message }}</span>@enderror
                         </div>
                         <div class="mb-4">
+                            <label for="peopleEmail" class="block text-gray-700 text-sm font-bold mb-2">{{__('auth.email')}}</label>
+                            <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                   id="peopleEmail" placeholder="{{__('auth.email')}}" wire:model="peopleEmail">
+                            @error('peopleEmail') <span class="text-red-500">{{ $message }}</span>@enderror
+                        </div>
+                        <div class="mb-4">
                             <label for="peopleTel" class="block text-gray-700 text-sm font-bold mb-2">{{__('auth.phone')}}</label>
                             <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                    id="peopleTel" placeholder="{{__('auth.fillIn')}} {{__('auth.phone')}}" wire:model="peopleTel">

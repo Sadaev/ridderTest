@@ -21,6 +21,13 @@
         @error('peopleIin') <span class="alert-sm alert-danger">{{ $message }}</span>@enderror
     </div>
     <div class="mb-3 row">
+        <label for="peopleEmail" class="col-sm-3 col-form-label">{{__('auth.email')}}</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="peopleEmail" wire:model="peopleEmail" />
+        </div>
+        @error('peopleEmail') <span class="alert-sm alert-danger">{{ $message }}</span>@enderror
+    </div>
+    <div class="mb-3 row">
         <label for="peopleTel" class="col-sm-3 col-form-label">{{__('auth.phone')}}</label>
         <div class="col-sm-9">
             <input type="text" class="form-control" id="peopleTel" wire:model="peopleTel" />

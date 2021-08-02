@@ -11,7 +11,7 @@ class OpenFormBtn extends Component
 {
 	public $isOpen = false;
 	public $saveDisabled = true;
-    public $peoples, $hospitals, $vaccineTypes, $peopleId, $peopleFio, $peopleTel, $peopleIin, $vaccineId, $hospitalId, $dateOfVaccine, $status;
+    public $peoples, $hospitals, $vaccineTypes, $peopleId, $peopleFio, $peopleTel, $peopleIin, $vaccineId, $hospitalId, $dateOfVaccine, $status, $peopleEmail;
 
     public function render()
     {
@@ -29,6 +29,7 @@ class OpenFormBtn extends Component
         $this->vaccineId = null;
         $this->dateOfVaccine = null;
 	$this->hospitalId = null;
+	$this->email= null;
 	$this->saveDisabled = true;
     }
 
@@ -49,6 +50,7 @@ class OpenFormBtn extends Component
             'peopleFio' => 'required',
             'peopleTel' => 'required',
             'peopleIin' => 'required|min:12|max:12',
+            'peopleEmail' => 'required|email',
             'vaccineId' => 'required',
             'hospitalId' => 'required',
             'dateOfVaccine' => 'required',
@@ -59,6 +61,7 @@ class OpenFormBtn extends Component
         RegistrationForVaccination::updateOrCreate(['id' => $this->peopleId],[
             'fio' => $this->peopleFio,
             'tel' => $this->peopleTel,
+            'email' => $this->peopleEmail,
             'vaccinationTypeId' => $this->vaccineId,
             'hospitalId' => $this->hospitalId,
             'dateOfVaccination' => $this->dateOfVaccine,

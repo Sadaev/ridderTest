@@ -37,6 +37,7 @@
                     <th class="px-4 py-2">{{ __('auth.dateOfRequest') }}</th>
                     <th class="px-4 py-2">{{ __('auth.fio') }}</th>
                     <th class="px-4 py-2">{{ __('auth.iin') }}</th>
+                    <th class="px-4 py-2">{{ __('auth.email') }}</th>
                     <th class="px-4 py-2">{{ __('auth.phone') }}</th>
                     <th class="px-4 py-2">{{ __('auth.typeOfVaccine') }}</th>
                     <th class="px-4 py-2">{{ __('auth.hospital') }}</th>
@@ -55,6 +56,7 @@
                         <td class="border px-4 py-2">{{ $people->created_at }}</td>
                         <td class="border px-4 py-2">{{ $people->fio }}</td>
                         <td class="border px-4 py-2">{{ $people->iin }}</td>
+                        <td class="border px-4 py-2">{{ $people->email}}</td>
                         <td class="border px-4 py-2">{{ $people->tel }}</td>
                         <td class="border px-4 py-2">{{ $people->vaccineName }}</td>
                         <td class="border px-4 py-2">{{ $people->hospitalName }}</td>

@@ -7,7 +7,8 @@ use App\Models\LotteryParticipant;
 use App\Models\TypeOfVaccine;
 use Livewire\Component;
 use App\Models\RegistrationForVaccination;
-use Maatwebsite\Excel\Facades\Excel;
+//use Maatwebsite\Excel\Facades\Excel;
+use Maatwebsite\Excel\Excel;
 use Maatwebsite\Excel\Concerns\FromCollection;
 
 class RegistrationForVaccinationExport implements FromCollection{
@@ -21,7 +22,7 @@ class RegistrationForVaccinationExport implements FromCollection{
 
 class RegistrationForVaccine extends Component
 {
-    public $peoples, $hospitals, $vaccineTypes, $peopleId, $peopleFio, $peopleTel, $peopleIin, $vaccineId, $hospitalId, $dateOfVaccine, $status;
+    public $peoples, $hospitals, $vaccineTypes, $peopleId, $peopleFio, $peopleTel, $peopleIin, $vaccineId, $hospitalId, $dateOfVaccine, $status, $peopleEmail;
     public $isOpen = 0;
     public $isEdit = false;
 
@@ -74,6 +75,7 @@ class RegistrationForVaccine extends Component
         $this->hospitalId = null;
         $this->dateOfVaccine = null;
         $this->status = '';
+        $this->peopleEmail = '';
     }
 
     public function store(){
@@ -84,6 +86,7 @@ class RegistrationForVaccine extends Component
             'vaccineId' => 'required',
             'hospitalId' => 'required',
             'dateOfVaccine' => 'required',
+            'peopleEmail' => 'required|email',
         ];
 
         if($this->isEdit){
@@ -100,7 +103,8 @@ class RegistrationForVaccine extends Component
             'hospitalId' => $this->hospitalId,
             'dateOfVaccination' => $this->dateOfVaccine,
             'iin' => $this->peopleIin,
-            'status' => empty($this->status) ? 'opened' : $this->status
+            'status' => empty($this->status) ? 'opened' : $this->status,
+            'email' => $this->peopleEmail
 	]);
 
 	if(!empty($this->status) && $this->status === 'successfully')
@@ -110,7 +114,7 @@ class RegistrationForVaccine extends Component
 			'hospitalId' => $this->hospitalId,
 			'iin' => $this->peopleIin,
 			'status' => 'approved',
-			'email' => '',
+			'email' => $this->peopleEmail,
 		]);
 
         session()->flash('message', $this->peopleId ? __('auth.updatedSuccess') : __('auth.createdSuccess'));
@@ -130,6 +134,7 @@ class RegistrationForVaccine extends Component
         $this->hospitalId = $people->hospitalId;
         $this->dateOfVaccine = $people->dateOfVaccination;
         $this->status = $people->status;
+        $this->peopleEmail= $people->email;
 
         $this->openModal();
     }
@@ -142,6 +147,15 @@ class RegistrationForVaccine extends Component
     }
 
     public function export(){
-    	return Excel::download(new RegistrationForVaccinationExport, 'registration_for_vaccination.xlsx');
+	$result = RegistrationForVaccination::all();
+	    Excel::create('registration_for_vaccination', function ($excel) use($result) {
+         $excel->setTitle('Export');
+         $excel->setCreator('Bauhaus')->setCompany('KraftHaus');
+         $excel->sheet('Excel sheet', function ($sheet) use($result) {
+             $sheet->setOrientation('landscape');
+             $sheet->fromArray($result);
+         });
+	    })->download('xls');
+    	//return Excel::download(new RegistrationForVaccinationExport, 'registration_for_vaccination.xlsx');
     }
 }
