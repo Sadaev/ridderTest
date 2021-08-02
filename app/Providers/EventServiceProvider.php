@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use App\Models\LotteryParticipant;
+use App\Models\RegistrationForVaccination;
+use App\Observers\LotteryParticipantObserver;
+use App\Observers\RegistrationForVaccinationObserver;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -27,6 +31,7 @@ class EventServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        LotteryParticipant::observe(LotteryParticipantObserver::class);
+        RegistrationForVaccination::observe(RegistrationForVaccinationObserver::class);
     }
 }
