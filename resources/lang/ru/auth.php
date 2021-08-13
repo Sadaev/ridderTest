@@ -82,6 +82,8 @@ return [
     'EnterGeneralStatisticCount' => 'Введите значение показателя',
     'VaccinationSite' => 'Место вакцинации',
     'export' => 'Выгрузить',
+    'exportAll' => 'Выгрузить все',
+    'exportParticipants' => 'Выгрузить одобренных',
     'successfully' => 'Успешно',
     'successRegistrationForVaccination' => 'Ваша заявка принята. С вами свяжутся по указанному Вами номеру телефона.',
     'successRegistrationLottery' => 'Ваша заявка на участие в акции принята. Следите за информацией об акции.',
