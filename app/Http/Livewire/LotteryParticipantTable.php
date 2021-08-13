@@ -1,22 +1,13 @@
 <?php
 
 namespace App\Http\Livewire;
-
+use App\Exports\LotteryExport;
 use App\Models\Hospital;
 use Livewire\Component;
 use App\Models\LotteryParticipant;
 use Maatwebsite\Excel\Facades\Excel;
-use Maatwebsite\Excel\Concerns\FromCollection;
 
-class LotteryExport implements FromCollection{
 
-    /**
-    * @return \Illuminate\Support\Collection
-    */
-    public function collection(){
-	    return LotteryParticipant::where('status', '=', 'approved')->get();
-    }
-};
 
 class LotteryParticipantTable extends Component
 {
@@ -121,7 +112,11 @@ class LotteryParticipantTable extends Component
         session()->flash('message',__('auth.deletedSuccess'));
     }
 
-    public function export(){
+    public function exportAll(){
     	return Excel::download(new LotteryExport, 'lottery_participants.xlsx');
+    }
+
+    public function exportParticipants(){
+        return Excel::download(new LotteryExport('approved'), 'lottery_participants.xlsx');
     }
 }

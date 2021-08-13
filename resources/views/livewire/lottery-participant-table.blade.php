@@ -23,7 +23,8 @@
 
                 @endif
                 <button wire:click="create()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3">{{__('auth.add')}}</button>
-                <button wire:click="export()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3">{{__('auth.export')}}</button>
+                <button wire:click="exportAll()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3">{{__('auth.exportAll')}}</button>
+                <button wire:click="exportParticipants()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3">{{__('auth.exportParticipants')}}</button>
                 @if($isOpen)
 
                     @include('livewire.create_register_for_lottery')
